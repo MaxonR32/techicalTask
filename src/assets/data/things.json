@@ -2,7 +2,7 @@
   {
     "id": 2861,
     "areaId": 1791,
-    "joinedWith": null,
+    "joinedWith": 2861,
     "sku": "3",
     "defaultSku": "3",
     "status": "open",
@@ -38,7 +38,7 @@
   {
     "id": 2971,
     "areaId": 1791,
-    "joinedWith": null,
+    "joinedWith": 2971,
     "sku": "6",
     "defaultSku": "6",
     "status": "open",
@@ -56,7 +56,7 @@
   {
     "id": 2973,
     "areaId": 1791,
-    "joinedWith": null,
+    "joinedWith": 2973,
     "sku": "8",
     "defaultSku": "8",
     "status": "open",
@@ -65,7 +65,7 @@
   {
     "id": 2974,
     "areaId": 1791,
-    "joinedWith": null,
+    "joinedWith": 2974,
     "sku": "9",
     "defaultSku": "9",
     "status": "open",
@@ -137,7 +137,7 @@
   {
     "id": 3003,
     "areaId": 1900,
-    "joinedWith": null,
+    "joinedWith": 3003,
     "sku": "2",
     "defaultSku": "2",
     "status": "open",
@@ -164,7 +164,7 @@
   {
     "id": 3014,
     "areaId": 1901,
-    "joinedWith": null,
+    "joinedWith": 3014,
     "sku": "A2",
     "defaultSku": "A2",
     "status": "open",
