@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AreaService } from './services/area.service'
 
 @Component({
   selector: 'app-root',
