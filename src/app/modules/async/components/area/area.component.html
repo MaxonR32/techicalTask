@@ -1,8 +1,8 @@
 <p>Async area works!</p>
 
 <div class="area" *ngFor="let area of areas$ | async">
-	<h2>{{area.name}}</h2>
-	<div class="things">
-		<app-thing [areaId]="area.areaId"></app-thing>
-	</div>
-</div>	
+  <h2>{{ area.name }}</h2>
+  <div class="things">
+    <app-thing [areaId]="area.areaId"></app-thing>
+  </div>
+</div>

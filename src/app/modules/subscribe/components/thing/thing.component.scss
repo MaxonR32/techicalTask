@@ -1,83 +1,78 @@
 .wrapper {
-	display: flex;
-	flex-directoin: row;
-	flex-flow: wrap;
-	// z-index: 5;
+  display: flex;
+  flex-directoin: row;
+  flex-flow: wrap;
+  // z-index: 5;
 }
 
 .default-sku-text {
-	grid-area: def-sku-text;
-	justify-self: end;
-	font-size: 13px;
+  grid-area: def-sku-text;
+  justify-self: end;
+  font-size: 13px;
 }
 
 .sku-text {
-	grid-area: sku-text;
-	place-self: start;
-	align-self: start;
-
+  grid-area: sku-text;
+  place-self: start;
+  align-self: start;
 }
 
 .left-line {
-	grid-area: left-line;
-	background-color: red;
-	border-radius: 0px 45px 45px 0px;
-	width: 3px;
-	height: 70%;
-	display: none;
-	justify-self: start;
-	// place-self: center;
-	align-self: center;
+  grid-area: left-line;
+  background-color: red;
+  border-radius: 0px 45px 45px 0px;
+  width: 3px;
+  height: 70%;
+  display: none;
+  justify-self: start;
+  // place-self: center;
+  align-self: center;
 }
 
 .open {
-	background-color: yellow;
+  background-color: yellow;
 }
 
 .thing {
-	display: flex;
-	flex-direction: row;
-
-
+  display: flex;
+  flex-direction: row;
 }
 
 .element {
-	position: relative;
-	z-index: 5;
+  position: relative;
+  z-index: 5;
 
+  &:not(:last-child):before {
+    opacity: 0.8;
+    background: #3663ab;
+    content: '';
+    width: 20px;
+    height: 40px;
+    z-index: -1;
+    top: 6px;
+    left: 90%;
+    position: absolute;
+  }
 
-	&:not(:last-child):before {
-		opacity: 0.8;
-		background: #3663AB;
-		content: "";
-		width: 20px;
-		height: 40px;
-		z-index: -1;
-		top: 6px;
-		left: 90%;
-		position: absolute;
-	}
-
-	&:first-child {
-		.left-line {
-			display: block;
-		}
-	}
+  &:first-child {
+    .left-line {
+      display: block;
+    }
+  }
 }
 
-
 .info-thing {
-	border-radius: 8px;
-	width: 70px;
-	height: 50px;
-	background-color: #2B4E87;
-	margin: 2px 2px;
-	display: grid;
-	grid-template-areas: 
-		"left-line def-sku-text"
-		"left-line sku-text"
-		"left-line sku-text";
-	p {
-		margin: 0;
-	}
+  border-radius: 8px;
+  width: 70px;
+  height: 50px;
+  background-color: #2b4e87;
+  margin: 2px 2px;
+  display: grid;
+  grid-template-areas:
+    'left-line def-sku-text'
+    'left-line sku-text'
+    'left-line sku-text';
+  p {
+    margin: 0;
+  }
 }

@@ -1,25 +1,24 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SubscribeLayoutComponent } from './subscribe-layout.component';
+import { SubscribeLayoutComponent } from './subscribe-layout.component'
 
 describe('SubscribeLayoutComponent', () => {
-  let component: SubscribeLayoutComponent;
-  let fixture: ComponentFixture<SubscribeLayoutComponent>;
+  let component: SubscribeLayoutComponent
+  let fixture: ComponentFixture<SubscribeLayoutComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubscribeLayoutComponent ]
-    })
-    .compileComponents();
-  });
+      declarations: [SubscribeLayoutComponent],
+    }).compileComponents()
+  })
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SubscribeLayoutComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(SubscribeLayoutComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

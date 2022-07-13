@@ -1,9 +1,9 @@
 <p>Subscribe area works!</p>
 <div class="wrapper">
-	<div class="area" *ngFor="let area of areas">
-		<h2>{{area.name}}</h2>
-		<div class="things">
-			<app-thing [areaId]="area.areaId"></app-thing>
-		</div>
-	</div>
+  <div class="area" *ngFor="let area of areas">
+    <h2>{{ area.name }}</h2>
+    <div class="things">
+      <app-thing [areaId]="area.areaId"></app-thing>
+    </div>
+  </div>
 </div>
