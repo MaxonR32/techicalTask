@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { AreaService } from '../../../../services/area.service'
 import { Thing } from '../../../../model/thing'
 import { Subscription } from 'rxjs';
@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./thing.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ThingComponent implements OnDestroy {
+export class ThingComponent implements OnChanges, OnDestroy {
 
   @Input() areaId: number
   things: any[] = []

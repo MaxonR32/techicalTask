@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnChanges, OnDestroy } from '@angular/core';
 import { Thing } from '../../../../model/thing'
 import { AreaService } from '../../../../services/area.service'
 import { Observable, Subscription, of } from 'rxjs';
@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
   changeDetection: ChangeDetectionStrategy.OnPush
 
 })
-export class ThingComponent {
+export class ThingComponent implements OnChanges {
 
   @Input() areaId: number
 
