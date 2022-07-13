@@ -4,7 +4,7 @@ import { SubscribeLayoutComponent } from './components/subscribe-layout/subscrib
 import { AreaComponent } from './components/area/area.component'
 
 export const routes: Routes = [
-	{ path: '', component: SubscribeLayoutComponent}
+	{ path: '', component: SubscribeLayoutComponent }
 ]
 
 export const routing = RouterModule.forChild(routes)

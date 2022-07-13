@@ -1,0 +1,11 @@
+<div class="wrapper">
+	<div class="thing" *ngFor="let thing of final$ | async">
+		<div class="element" *ngFor="let t of thing.objects">
+			<div  class="info-thing">
+				<p class="sku-text">{{t.sku}}</p>
+				<div [ngClass]="{'open': t.status === 'open'}" class="left-line"></div>
+				<p class="default-sku-text">{{t.defaultSku}}</p>	
+			</div>
+		</div>
+	</div>	
+</div>

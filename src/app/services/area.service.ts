@@ -11,8 +11,6 @@ import { Thing } from '../model/thing'
 })
 export class AreaService {
 
-  things: Thing[] = []
-
   constructor(private http: HttpClient) { }
 
   getAreas(): Observable<Area[]> {
@@ -25,9 +23,5 @@ export class AreaService {
       response = response.filter(data => data.areaId === id)
       return response
     })))
-  }
-
-  getThingsById(id: number) {
-    return this.things.filter(data => data.areaId === id)
   }
 }
