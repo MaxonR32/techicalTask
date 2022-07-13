@@ -1,5 +1,5 @@
 <div class="wrapper">
-	<div class="thing" *ngFor="let thing of final$ | async">
+	<div class="thing" *ngFor="let thing of final$ | async ">
 		<div class="element" *ngFor="let t of thing.objects">
 			<div  class="info-thing">
 				<p class="sku-text">{{t.sku}}</p>

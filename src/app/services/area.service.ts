@@ -11,6 +11,11 @@ import { Thing } from '../model/thing'
 })
 export class AreaService {
 
+  things: Thing[] = []
+  areaIdArr: any = []
+  finalA: any = []
+
+
   constructor(private http: HttpClient) { }
 
   getAreas(): Observable<Area[]> {
@@ -20,8 +25,33 @@ export class AreaService {
   getThings(id: number): Observable<Thing[]> {
     return this.http.get<Thing[]>('assets/data/things.json')
     .pipe((map(response => {
+      this.finalA = []
+      this.areaIdArr = []
       response = response.filter(data => data.areaId === id)
-      return response
+
+      this.things = response
+
+      this.things.sort((a, b) => a.joinedWith - b.joinedWith)
+
+      this.things.forEach(a => {
+        this.areaIdArr.push(a.joinedWith)
+      })
+      this.areaIdArr = [...new Set(this.areaIdArr)]
+
+      this.areaIdArr.forEach((t: any) => {
+          let s:any = []
+
+        this.things.forEach(a => {
+          if (t === a.joinedWith) {
+            s.push(a)                
+          }
+        })
+        let obj = {
+          objects: s
+        }
+        this.finalA.push(obj)
+      })
+      return this.finalA
     })))
   }
 }
